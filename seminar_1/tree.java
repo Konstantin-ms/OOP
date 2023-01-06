@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import seminar_1.Human;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
