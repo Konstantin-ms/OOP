@@ -11,10 +11,10 @@ public class Close implements Option{
 
     @Override
     public String discription() {
-        return "Завершить.";
-    }
+        return "Завершить.";}
 
     @Override
-    public void execute() {view.Close();}
+    public void execute() {
+        view.close();}
     
 }

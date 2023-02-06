@@ -11,10 +11,10 @@ public class H2h_community implements Option{
 
     @Override
     public String discription() {
-        return "Вывести тип родственной связи между объектами.";
-    }
+        return "Вывести тип родственной связи между объектами.";}
 
     @Override
-    public void execute() {view.H2h_community();}
-    
+    public void execute() {
+        view.h2h_community();}
+
 }

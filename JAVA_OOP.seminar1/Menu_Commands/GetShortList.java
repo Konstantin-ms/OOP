@@ -6,13 +6,14 @@ public class GetShortList implements Option{
     View view;
 
     public GetShortList(View view) {
-        this.view = view;
-    }
+        this.view = view;}
 
     @Override
     public String discription() {
         return "Вывести краткий список.";}
 
     @Override
-    public void execute() {view.GetShortList();}
+    public void execute() {
+        view.getShortList();}
     
+}

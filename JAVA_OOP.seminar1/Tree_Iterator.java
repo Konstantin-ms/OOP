@@ -11,8 +11,10 @@ public class Tree_Iterator<T extends Human> implements Iterator<T>{
         this.humans = humans;}
 
     @Override
-    public boolean hasNext() {return id<humans.size();}
+    public boolean hasNext() {
+        return id<humans.size();}
 
     @Override
-    public T next() {return humans.get(id++);}
+    public T next() {
+        return humans.get(id++);}
 }

@@ -6,8 +6,7 @@ public class GetHuman_Info_Id implements Option {
     View view;
 
     public GetHuman_Info_Id(View view) {
-        this.view = view;
-    }
+        this.view = view;}
 
     @Override
     public String discription() {
@@ -15,6 +14,7 @@ public class GetHuman_Info_Id implements Option {
 
 
     @Override
-    public void execute() {view.GetHuman_Info_Id();}
+    public void execute() {
+        view.getHuman_Info_Id();}
     
 }

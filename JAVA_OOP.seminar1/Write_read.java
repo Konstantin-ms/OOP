@@ -13,7 +13,7 @@ public class Write_read implements Writeable, Serializable{
     public void save(Tree my_tree) {
         try {
                 ObjectOutputStream objectOutputStream = 
-                new ObjectOutputStream(new FileOutputStream("humans.out"));
+                new ObjectOutputStream(new FileOutputStream("JAVA_OOP//seminar1//humans.out"));
                 objectOutputStream.writeObject(my_tree);
                 objectOutputStream.close();}
         catch(FileNotFoundException e) {System.out.println("Файл не найден.");}
@@ -24,7 +24,7 @@ public class Write_read implements Writeable, Serializable{
 
         try {
             ObjectInputStream objectInputStream = 
-            new ObjectInputStream(new FileInputStream("humans.out"));
+            new ObjectInputStream(new FileInputStream("JAVA_OOP//seminar1//humans.out"));
             my_tree = (Tree) objectInputStream.readObject();
             objectInputStream.close();
             return my_tree;}

@@ -16,21 +16,27 @@ public class Human implements Serializable{
         {return this.getLast_name()+" "+this.getFirst_name()+" "
         +this.getbirth_year()+"г.р. ( id : "+this.getId()+" )";}
 
-    public ArrayList<String> toString_1() {
+    public ArrayList<String> to_List() {
         ArrayList<String> list1 = new ArrayList<>();
         String str1 = "";
 
         str1 = "\nID : "+this.getId()+" Имя : "+this.getFirst_name()+ " "
         +this.getLast_name()+" Пол : ";
-        if (this.getMan()==true) str1 = str1+"Мужской";
-        else str1 = str1+"Женский";
+        if (this.getMan()==true) 
+            str1 = str1+"Мужской";
+        else 
+            str1 = str1+"Женский";
         str1 = str1+" Год рождения : "+this.getbirth_year();
         list1.add(str1);
-        if (this.getFather()!= null) list1.add("Отец : "+this.getFather().toString());
-        if (this.getMother()!= null) list1.add("Мать : "+this.getMother().toString());
+        if (this.getFather()!= null) 
+            list1.add("Отец : "+this.getFather().toString());
+        if (this.getMother()!= null) 
+            list1.add("Мать : "+this.getMother().toString());
         if (this.getId_married()!=0){
-            if (this.getMan()==true) list1.add("Жена : "+this.getMarried().toString());
-            else list1.add("Муж : "+this.getMarried().toString());}
+            if (this.getMan()==true) 
+                list1.add("Жена : "+this.getMarried().toString());
+            else 
+                list1.add("Муж : "+this.getMarried().toString());}
         if (this.getChild().size()>0) 
             {list1.add("Дети : ");
             for (Human child:this.getChild()) {list1.add(child.toString());}}            

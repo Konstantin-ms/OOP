@@ -13,6 +13,7 @@ public class GetFullList implements Option{
         return "Вывести подробный список.";}
 
     @Override
-    public void execute() {view.GetFullList();}
+    public void execute() {
+        view.getFullList();}
     
 }

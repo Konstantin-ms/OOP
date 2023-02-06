@@ -25,7 +25,9 @@ public class My_write_read {
         ArrayList<String> log_list = new ArrayList<>();
         BufferedReader f_r = new BufferedReader(new FileReader("humans.txt"));
         String line;
-        while ((line=f_r.readLine())!=null) log_list.add(line); f_r.close();
+        while ((line=f_r.readLine())!=null) 
+            log_list.add(line); 
+        f_r.close();
     
         for (int i = 0; i < log_list.size(); i++) {
             Human human = new Human();
@@ -33,13 +35,12 @@ public class My_write_read {
             human.setFirst_name(log_list.get(++i));;
             human.setLast_name(log_list.get(++i));
             human.setBirth_year(Integer.parseInt(log_list.get(++i)));
-            if (log_list.get(++i).equals("1")) human.setMan(true);
-            else human.setMan(false);
+            if (log_list.get(++i).equals("1")) 
+                human.setMan(true);
+            else 
+                human.setMan(false);
             human.setId_father(Integer.parseInt(log_list.get(++i)));
             human.setId_mother(Integer.parseInt(log_list.get(++i)));
             human.setId_married(Integer.parseInt(log_list.get(++i)));
-            humans.add(human);}}
-    
-
-    
+            humans.add(human);}} 
 }
